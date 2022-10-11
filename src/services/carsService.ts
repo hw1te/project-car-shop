@@ -1,6 +1,6 @@
-import { ICar, CarZodSchema } from '../interfaces/ICar';
-import { IModel } from '../interfaces/IModel';
 import { IService } from '../interfaces/IService';
+import { IModel } from '../interfaces/IModel';
+import { ICar, CarZodSchema } from '../interfaces/ICar';
 import { ErrorTypes } from '../errors/errors';
 
 export default class CarsService implements IService<ICar> {
@@ -11,23 +11,23 @@ export default class CarsService implements IService<ICar> {
     return foundList;
   }
   public async readOne(_id: string): Promise<ICar> {
-    const foundCar = await this._cars.readOne(_id);
-    if (!foundCar) throw Error(ErrorTypes.EntityNotFound);
-    return foundCar;
+    const result = await this._cars.readOne(_id);
+    if (!result) throw Error(ErrorTypes.EntityNotFound);
+    return result;
   }
   public async update(_id: string, payload: ICar): Promise<ICar> {
     const parsed = CarZodSchema.safeParse(payload);
     if (!parsed.success) {
       throw parsed.error;
     }
-    const updated = await this._cars.update(_id, payload);
-    if (!updated) throw Error(ErrorTypes.EntityNotFound);
-    return updated;
+    const result = await this._cars.update(_id, payload);
+    if (!result) throw Error(ErrorTypes.EntityNotFound);
+    return result;
   }
   public async delete(_id: string): Promise<ICar> {
-    const deleted = await this._cars.delete(_id);
-    if (!deleted) throw Error(ErrorTypes.EntityNotFound);
-    return deleted;
+    const result = await this._cars.delete(_id);
+    if (!result) throw Error(ErrorTypes.EntityNotFound);
+    return result;
   }
 
   public async create(payload:unknown): Promise<ICar> {
@@ -35,7 +35,7 @@ export default class CarsService implements IService<ICar> {
     if (!parsed.success) {
       throw parsed.error;
     }
-    const created = await this._cars.create(parsed.data);
-    return created;
+    const result = await this._cars.create(parsed.data);
+    return result;
   }
 }
