@@ -1,0 +1,122 @@
+[33mcommit aafc7dbf306f02e322d360190e2d13a7a5cd7843[m[33m ([m[1;36mHEAD -> [m[1;32mgustavo-pospi-car-shop[m[33m, [m[1;31morigin/gustavo-pospi-car-shop[m[33m)[m
+Author: Gustavo Pospi <gutxander@gmail.com>
+Date:   Wed Oct 12 00:19:38 2022 -0300
+
+    .
+
+[33mcommit 87b4a89ee7dc02305d434a9f1746cb5d05403965[m
+Author: Gustavo Pospi <gutxander@gmail.com>
+Date:   Tue Oct 11 23:47:53 2022 -0300
+
+    feat: testes da camada service de cars incrementados.
+
+[33mcommit 4258c179f5d8242ffe3d362374db5659965cc6ce[m
+Author: Gustavo Pospi <gutxander@gmail.com>
+Date:   Tue Oct 11 18:23:11 2022 -0300
+
+    feat: implementa testes na camada model.
+
+[33mcommit 0e5b818470e08b29a2107e5a9291b5bd8979ce49[m
+Author: Gustavo Pospi <gutxander@gmail.com>
+Date:   Tue Oct 11 18:13:07 2022 -0300
+
+    feat: testes na camada controller implementados.
+    Troca Frame para Cars nos describes das camadas.
+
+[33mcommit 1df67a22ecc6a6dfa14129a8a061378efd6a0593[m
+Author: Gustavo Pospi <gutxander@gmail.com>
+Date:   Tue Oct 11 18:05:05 2022 -0300
+
+    feat: testes da camada service implementados.
+
+[33mcommit d3b11552ef01aa32e09db81361dda65a1fe01427[m
+Author: Gustavo Pospi <gutxander@gmail.com>
+Date:   Tue Oct 11 04:44:43 2022 -0300
+
+    feat: interface IMotorcycle criada a partir da IVehicle.
+
+[33mcommit 6142dc669c55cee39efd25352bb5c1585af0a010[m
+Author: Gustavo Pospi <gutxander@gmail.com>
+Date:   Tue Oct 11 04:41:01 2022 -0300
+
+    feat: requisição do método DELETE adicionada na rota /cars/id.
+
+[33mcommit 7b273b005e3586983fe1c9d627ed96fbd0c76d94[m
+Author: Gustavo Pospi <gutxander@gmail.com>
+Date:   Tue Oct 11 04:36:39 2022 -0300
+
+    feat: requisição do método PUT adicionada na rota /cars/id.
+
+[33mcommit 24e4dd88990ac7bbb6a34e9a7043127f7d9db14e[m
+Author: Gustavo Pospi <gutxander@gmail.com>
+Date:   Tue Oct 11 04:29:16 2022 -0300
+
+    feat: requisição do método GET adicionada na rota /cars/id.
+
+[33mcommit 7344344fc2c25f87314b2da28f0b2b470a00291d[m
+Author: Gustavo Pospi <gutxander@gmail.com>
+Date:   Tue Oct 11 04:12:45 2022 -0300
+
+    feat: requisição metodo GET adicionada a rota /cars.
+
+[33mcommit 4d5140bd4a0a587633240e7932f61966e9a5bd75[m
+Author: Gustavo Pospi <gutxander@gmail.com>
+Date:   Tue Oct 11 04:06:12 2022 -0300
+
+    feat: corrige requisito 4.
+
+[33mcommit f3694fe9d24963c6d154f49ecfe4c7f8e1920114[m
+Author: Gustavo Pospi <gutxander@gmail.com>
+Date:   Tue Oct 11 03:21:12 2022 -0300
+
+    feat: requisito 4 em andamento.
+
+[33mcommit 4c7675b89fb84e8c3ec75ebd888a90d6eee43aae[m
+Author: Gustavo Pospi <gutxander@gmail.com>
+Date:   Fri Oct 7 09:56:11 2022 -0300
+
+    feat: interface ICar criada a partir da interface IVehicle.
+    Validação feita pela biblioteca Zod.
+
+[33mcommit a90ccc48ed6e4b30b80f4ae1d7c11f11018bba6a[m
+Author: Gustavo Pospi <gutxander@gmail.com>
+Date:   Fri Oct 7 09:33:51 2022 -0300
+
+    feat: interface genérica IVehicle criada.
+    Validação feita pela biblioteca Zod.
+
+[33mcommit 0530d5eec8a6a04b3b9d1cf22b2cdc5ac5c5d5aa[m
+Author: Gustavo Pospi <gutxander@gmail.com>
+Date:   Thu Oct 6 19:21:44 2022 -0300
+
+    feat: interface gênerica IModel criada.
+
+[33mcommit 0a656f67f9b56302d6e5adffe5587db47ba3af3c[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Author: trybe-tech-ops <82593112+trybe-tech-ops@users.noreply.github.com>
+Date:   Fri Sep 16 15:06:52 2022 -0300
+
+    README.md updated
+
+[33mcommit 9ce5ca1076b18671bcdcf414547714c26a3b2967[m
+Author: Kissyla <67333783+mottak@users.noreply.github.com>
+Date:   Thu Sep 15 09:39:18 2022 -0300
+
+    Update README.md
+
+[33mcommit 4c3b3725f4c6189a8fa8eb8912c105f3f42cdcc0[m
+Author: trybe-tech-ops <82593112+trybe-tech-ops@users.noreply.github.com>
+Date:   Tue Sep 13 19:44:20 2022 -0300
+
+    .github/workflows/main.yml updated
+
+[33mcommit 45e529787ec24fb301a2a7bf8f2bcbb2d460863e[m
+Author: trybe-tech-ops <82593112+trybe-tech-ops@users.noreply.github.com>
+Date:   Tue Sep 13 19:44:19 2022 -0300
+
+    README.md updated
+
+[33mcommit 8a8de937db08bfcc043103357acbe609e041864d[m
+Author: trybe-tech-ops <82593112+trybe-tech-ops@users.noreply.github.com>
+Date:   Tue Sep 13 19:44:19 2022 -0300
+
+    Initial commit
