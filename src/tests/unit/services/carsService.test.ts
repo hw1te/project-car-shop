@@ -6,7 +6,7 @@ import CarsModel from '../../../models/carsModel';
 import CarsService from '../../../services/carsService';
 import { carMock, carMockWithId } from '../../mocks/carsMock';
 
-describe('Frame Service', () => {
+describe('Cars Service', () => {
 	const carsModel = new CarsModel();
 	const carsService = new CarsService(carsModel);
 
@@ -15,7 +15,6 @@ describe('Frame Service', () => {
 		sinon.stub(carsModel, 'readOne')
 			.onCall(0).resolves(carMockWithId) 
 			.onCall(1).resolves(null); 
-    sinon.stub(carsModel, 'read').resolves([carMock]);
 	})
 	after(() => {
 		sinon.restore()
@@ -50,26 +49,6 @@ describe('Frame Service', () => {
       let err:any;
 			try {
 				await carsService.readOne(carMockWithId._id);
-			} catch (error) {
-				err = error
-			}
-
-			expect(err, 'error should be defined').not.to.be.undefined;
-			expect(err.message).to.be.deep.equal(ErrorTypes.ObjectNotFound);
-		});
-	});
-
-  describe('Read Cars', () => {
-		it('Success', async () => {
-			const carCreated = await carsService.read();
-
-			expect(carCreated).to.be.deep.equal(carMock);
-		});
-
-		it('Failure', async () => {
-      let err:any;
-			try {
-				await carsService.read();
 			} catch (error) {
 				err = error
 			}
